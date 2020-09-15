@@ -1,8 +1,4 @@
-# password generator
-
-# todos
-
-# 1. how do we generate a password in ruby? ✅
+# methods
 
 def ask_user_for_password_length
   puts "How many characters would your like your password to be?"
@@ -10,14 +6,9 @@ def ask_user_for_password_length
   gets.chomp.to_i
 end
 
-def generate_password
-  password_length = ask_user_for_password_length
-  password = ""
-  password_length.times do 
-    ascii_decimal = rand(33..126)
-    password += ascii_decimal.chr
-  end
-  return password
+def user_selection
+  menu 
+  gets.chomp.to_i
 end
 
 def menu 
@@ -28,10 +19,18 @@ def menu
   print "> "
 end
 
-def user_selection
-  menu 
-  gets.chomp.to_i
+def generate_password
+  password_length = ask_user_for_password_length
+  password = ""
+  password_length.times do 
+    ascii_decimal = rand(33..126)
+    password += ascii_decimal.chr
+  end
+  password
 end
+
+# method calling
+# loop logic
 
 loop do 
   case user_selection
@@ -45,6 +44,8 @@ loop do
   end
 end
 
+# todos
+# 1. how do we generate a password in ruby? ✅
 # 2. how many characters will be in the password? ✅
-# 3. how will the user ask for a new password? 👍
+# 3. how will the user ask for a new password? ✅
 # 4. how will we store the passwords in memory? ❌
