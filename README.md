@@ -1,5 +1,11 @@
 # Password Generator Terminal App
 
+## Ruby Gems
+
+What are ruby gems?
+
+1. Ruby code that's written by other ruby devs that we can use in our own projects to add functionality
+
 ## Todos 
 
 ```ruby
@@ -14,6 +20,4 @@
 # 1. logic for the menu and the password_array
 # 2. password logic
 ```
-
-## Instructions
 
