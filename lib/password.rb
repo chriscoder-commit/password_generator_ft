@@ -1,6 +1,3 @@
-require 'colorize'
-require 'byebug'
-
 def ask_user_for_password_length
   puts 'How many characters would your like your password to be?'
   print '> '
